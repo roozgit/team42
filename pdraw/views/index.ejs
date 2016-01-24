@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title><%= title %></title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/stylesheets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">P.I.C.K.U.S</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form id="mainForm" class="navbar-form navbar-right" name="loginForm" method="POST">
+            <div class="form-group">
+              <input id="query" name="query" type="text" placeholder="Enter command" class="form-control">
+            </div>
+            <button id="submission" type="submit" class="btn btn-success">Fly!</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+          <div class="col-md-6">
+                <h1>Welcome to our project</h1>
+                <p>(P)arrot (I)nstruction (I)nterpreter, (C)amera (U)tility (S)ampled</p>
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+           Youtube demo
+            </button>
+           </div>
+           <div class="col-md-6">
+               <label>Drone console</label>
+              <textarea id="drText" class="form-control" style="min-width: 100%;resize:none;" rows=10></textarea>
+           </div>
+               
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Youtube demo</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="570" height="338" src="http://www.youtube.com/embed/KgMt0dtr4Vc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div align="center">
+          <h2>Our Team</h2>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="row">
+                <h3 align="center">Roozbeh</h3>
+                <div align="center">
+                <img src="/images/roozFace.jpg" class="teamImage img-responsive img-circle" alt="Roozbeh">
+                </div> 
+          </div>
+          <p>ASU student. Loves CS. Enjoys logical puzzles and challenges. Likes engaging with difficult and challenging problems to an exhausting degree. </p>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+                <h3 align="center">Mona</h3>
+                <div align="center">
+                <img src="/images/monaFace.jpg" class="teamImage img-responsive img-circle" alt="Mona">
+                </div> 
+          </div>
+          <p>ASU student. Loves programming computer and messing with cool hardware and is good at them too!</p>
+       </div>
+        <div class="col-md-3">
+           <div class="row">
+                <h3 align="center">Drew</h3>
+                <div align="center">
+                <img src="/images/drewFace.jpg" class="teamImage img-responsive img-circle" alt="Drew">
+                </div> 
+          </div>
+          <p>ASU student. Likes messing with hardware. His original ideas about doing an airborne project drove team toward drones.</p>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+                <h3 align="center">Joseph</h3>
+                <div align="center">
+                <img src="/images/josephFace.png" class="teamImage img-responsive img-circle" alt="Joseph">
+                </div> 
+          </div>
+          <p>ASU student. Enthusiastic and energetic. Also gives really hard-to-come-by technical tips when looks at your screen over your shoulder!</p>
+        </div>
+      </div>
+
+      <hr>
+
+     <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Our team came together randomly. All of us were just nerds interested in hacking. Three of us had never even touched a drone during their lives and none of us knew
+            very much about asynchronous reactive web apps. For that very exact reason, we decided to develop an app for drones with Nodejs! We had a lot of fun. Our goal initially was to program the 
+            drone so it follows a predetermined mathematical path (a sinusoidal wave). Maybe we were too passionate (and Redbull-blooded) to easily solve this problem. But it looks this kind of problem 
+            can have great educational and entertainment benefits for students in every grade.
+            To make things more interesting, Nodejs offers a reactive, asynchronous solution which opens the way for endless possibilites. Being Node newbies we couldn't harness all this potential. Still, the 
+            idea that drones can entertain and educate in large scale is shown with this humble one-page app.
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/javascripts/ie-emulation-modes-warning.js"></script>
+<script type="text/javascript">
+    $(function() {
+    $('#mainForm').submit(function(event) {
+          event.preventDefault();
+        var parameter = { query: $('input#query').val() };
+         $.post( '/flying',parameter, function(data) {
+       $('#drText').append(data);
+       console.log(data);
+    });
+    });
+});
+
+</script>
+  </body>
+</html>
