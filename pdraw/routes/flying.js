@@ -26,19 +26,19 @@ router.post('/', function(req, res)  {
                     console.log('Moving sinusoidally');
                     control.ref(ref);
                     
-                    t+=5;
-                    pcmd.front = .025*t;
+                    t+=.5;
+                    pcmd.front = t;
                     if(Math.sin(t)>=0) {    
-                        pcmd.up=5*Math.sin(t/5);
+                        pcmd.up=5*Math.sin(t/2.5);
                         pcmd.down=0;
                     } else {
-                        pcmd.down=5*Math.sin(t/5);
+                        pcmd.down=5*Math.sin(t/2.5);
                         pcmd.up=0;
                     }
                     
                     control.pcmd(pcmd);
                     control.flush();
-                }, 500);
+                }, 250);
             
             setTimeout(function() {
                 ref.fly = false;
